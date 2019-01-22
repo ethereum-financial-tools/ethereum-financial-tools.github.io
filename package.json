@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "financial-tools",
+  "version": "0.0.0",
+  "description": "financial tools for the ethereum ecosystem",
+  "main": "src/index.js",
+  "scripts": {
+    "log": "echo $PATH",
+    "start": "budo demo.js:bundle.js --title $npm_package_name --force-default-index --ssl --live --open",
+    "build": "browserify demo.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethereum",
+    "finance",
+    "accounting",
+    "tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethereum-financial-tools/ethereum-financial-tools.github.io.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethereum/ethereum-financial-tools/issues"
+  },
+  "homepage": "https://github.com/ethereum/ethereum-financial-tools",
+  "devDependencies": {
+    "budo": "^11.6.0"
+  },
+  "dependencies": {
+    "bel": "^6.0.0",
+    "csjs-inject": "^1.0.1"
+  }
+}
