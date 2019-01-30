@@ -5,8 +5,7 @@
   "description": "financial tools for the ethereum ecosystem",
   "main": "src/index.js",
   "scripts": {
-    "log": "echo $PATH",
-    "start": "budo demo.js:bundle.js --title $npm_package_name --force-default-index --ssl --live --open",
+    "start": "budo demo.js:bundle.js --dir . --title $npm_package_name --force-default-index --ssl --live --open",
     "build": "browserify demo.js -o bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +29,7 @@
   },
   "dependencies": {
     "bel": "^6.0.0",
-    "csjs-inject": "^1.0.1"
+    "csjs-inject": "^1.0.1",
+    "mermaid": "^8.0.0"
   }
 }

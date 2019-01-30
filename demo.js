@@ -1,5 +1,6 @@
 const tools = require('./')
 
-const element = tools({ title: 'ethereum financial tools'})
-
-document.body.appendChild(element)
+;(async () => {
+  const element = await tools({ title: 'ethereum tools'})
+  document.body.appendChild(element)
+})()
