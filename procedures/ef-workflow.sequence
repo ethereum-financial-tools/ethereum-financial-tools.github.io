@@ -1,22 +1,22 @@
-Contractor ->> SmartContract : Here is my {Invoice}
+Contractor ->> SmartContract   : Here is my {Invoice}
 
-SmartContract ->> Bamboo     : Please, verify the contract
-Note right of Bamboo: Comparing {Invoice} <br> with Contract <br> (hourly rate, units, <br> contract active)
+SmartContract ->> HR System    : Please, verify the contract
+Note right of HR System: Comparing {Invoice} <br> with Contract <br> (hourly rate, units, <br> contract active)
 
-Bamboo ->> SmartContract     : {Invoice} is verified
+HR System ->> SmartContract       : {Invoice} is verified
 
-SmartContract ->> Team lead  : Please, approve the contract
+SmartContract ->> Team lead    : Please, approve the contract
 Note right of Team lead: Comparing {Invoice} <br> with Github activity
 
-Team lead ->> SmartContract  : {Invoice} is approved
+Team lead ->> SmartContract    : {Invoice} is approved
 
-SmartContract ->> Maurice    : Here is the summary of all approved contracts
-Note right of Maurice: Double checking <br> the summary
+SmartContract ->> Fin Operator : Here is the summary of all approved contracts
+Note right of Fin Operator: Double checking <br> the summary
 
-Maurice ->> Vitalik          : I request X funds
-Note right of Vitalik: Sending funds to <br> SmartContract
+Fin Operator ->> Treasurer          : I request X funds
+Note right of Treasurer: Sending funds to <br> SmartContract
 
-Vitalik ->> SmartContract    : Here is X funds
+Treasurer ->> SmartContract    : Here is X funds
 
 SmartContract ->> Contractor : Here is payment for your {Invoice}
 
